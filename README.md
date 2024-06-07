@@ -83,7 +83,7 @@ CREATE TABLE vendas (
     valor_imposto DECIMAL(10, 2) NOT NULL,
 
     data_venda TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    
+
 );
 
 ## 4. Desenvolvimento do Backend em PHP
@@ -93,9 +93,13 @@ CREATE TABLE vendas (
 Crie um arquivo conexao.php na pasta api para estabelecer a conexão com o banco de dados.
 
 $host = 'localhost';
+
 $port = '5432'; // Altere para a porta correta, a porta 8080 foi usada para fins de teste.
+
 $dbname = 'mercado'; //Ou o que preferir utilizar.
+
 $username = 'username';
+
 $password = 'password';
 
 4.2. Criação dos Endpoints
