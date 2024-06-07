@@ -32,19 +32,16 @@ Clique com o botão direito no banco de dados e escolha "Restore...". Isso abrir
 3.1. Criação do Banco de Dados e Tabelas(Opcional)
 Crie um script SQL para criar o banco de dados "mercado" e as tabelas necessárias dentro dele. Você pode executar esse script usando o pgAdmin ou outro cliente PostgreSQL. Certifique-se de executar os comandos SQL dentro do banco de dados "mercado".
 
--- Criar o banco de dados mercado
 CREATE DATABASE mercado;
 
 Nesse ponto acesse a database mercado e depois rode os seguintes comandos:
 
--- Criar a tabela de tipos de produtos
 CREATE TABLE tipos_produtos (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     imposto_percentual DECIMAL(5, 2) NOT NULL
 );
 
--- Criar a tabela de produtos
 CREATE TABLE produtos (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
@@ -52,7 +49,6 @@ CREATE TABLE produtos (
     preco DECIMAL(10, 2) NOT NULL
 );
 
--- Criar a tabela de vendas
 CREATE TABLE vendas (
     id SERIAL PRIMARY KEY,
     produto_id INT NOT NULL REFERENCES produtos(id),
