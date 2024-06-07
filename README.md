@@ -3,6 +3,7 @@ Desafio técnico - Mercado.
 Este é um sistema de mercado desenvolvido para gerenciar produtos, tipos de produtos e vendas. Ele fornece uma interface amigável para os funcionários do mercado registrarem vendas e calcularem os impostos sobre essas vendas.
 
 1. Configuração do Ambiente
+
 1.1. Instalação do PHP
 Se você ainda não tem o PHP instalado, baixe e instale a versão adequada para o seu sistema operacional. Você pode encontrar o PHP no site oficial PHP.net.
 
@@ -72,6 +73,7 @@ $password = 'password';
 Desenvolvi os arquivos PHP dentro da pasta api para lidar com as operações CRUD necessárias, como cadastrar produtos, tipos de produtos, listar produtos e registrar vendas.
 
 5. Desenvolvimento do Frontend em HTML e CSS
+
 5.1. Páginas HTML
 Criei arquivos HTML para as diferentes páginas do projeto, como a página inicial (index.php), página de cadastro de produtos (cadastro_produto.php), página de cadastro de tipos de produtos (cadastro_tipo_produto.php), página de listagem de produtos (listar_produtos.php) e página de registro de vendas (registrar_venda.php).
 
@@ -79,6 +81,7 @@ Criei arquivos HTML para as diferentes páginas do projeto, como a página inici
 Criei um arquivo style.css na pasta css para estilizar as páginas HTML e tornar o projeto visualmente atraente.
 
 6. Teste do Projeto
+
 6.1. Execução do Servidor PHP
 Abra o terminal, navegue até a pasta raiz do seu projeto (mercado/) e execute o seguinte comando para iniciar o servidor PHP embutido:
 
