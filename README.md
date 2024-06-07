@@ -49,25 +49,41 @@ CREATE DATABASE mercado;
 Nesse ponto acesse a database mercado e depois rode os seguintes comandos:
 
 CREATE TABLE tipos_produtos (
+
     id SERIAL PRIMARY KEY,
+
     nome VARCHAR(255) NOT NULL,
+
     imposto_percentual DECIMAL(5, 2) NOT NULL
+
 );
 
 CREATE TABLE produtos (
+
     id SERIAL PRIMARY KEY,
+
     nome VARCHAR(255) NOT NULL,
+
     tipo_id INT NOT NULL REFERENCES tipos_produtos(id),
+
     preco DECIMAL(10, 2) NOT NULL
+
 );
 
 CREATE TABLE vendas (
+
     id SERIAL PRIMARY KEY,
+
     produto_id INT NOT NULL REFERENCES produtos(id),
+
     quantidade INT NOT NULL,
+
     valor_total DECIMAL(10, 2) NOT NULL,
+
     valor_imposto DECIMAL(10, 2) NOT NULL,
+
     data_venda TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    
 );
 
 ## 4. Desenvolvimento do Backend em PHP
